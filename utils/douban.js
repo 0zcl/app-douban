@@ -3,7 +3,7 @@ const fetch = require('./fetch')
 
 /**
  * 抓取豆瓣电影特定类型的API
- * https://developers.douban.com/wiki/?title=movie_v2
+ * https://github.com/zce/douban-api-docs/
  * @param  {String} type   类型，例如：'coming_soon'
  * @param  {Objece} params 参数
  * @return {Promise}       包含抓取任务的Promise

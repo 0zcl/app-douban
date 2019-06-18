@@ -26,7 +26,7 @@ App({
   data: {
     name: 'Douban Movie',
     version: '0.1.0',
-    currentCity: '北京'
+    currentCity: '广州'
   },
 
   /**
@@ -61,7 +61,6 @@ App({
       })
       .catch(err => {
         this.data.currentCity = '北京'
-        console.error(err)
       })
   }
 })

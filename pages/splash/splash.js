@@ -24,7 +24,9 @@ Page({
           console.log('uncached')
           return resolve(null)
         })
-        .catch(e => resolve(null))
+        .catch(e => {
+          resolve(null)
+        })
     })
   },
 
@@ -45,8 +47,9 @@ Page({
           return this.setData({ movies: cache.movies, loading: false })
         }
 
-        app.douban.find('coming_soon', 1, 1)
+        app.douban.find('coming_soon', 1, 4)
           .then(d => {
+            console.log('coming movie', d)
             this.setData({ movies: d.subjects, loading: false })
             return app.wechat.setStorage('last_splash_data', {
               movies: d.subjects,
