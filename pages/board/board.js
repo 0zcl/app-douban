@@ -33,6 +33,7 @@ Page({
     })
 
     Promise.all(tasks).then(boards => {
+      console.log('boards', boards)
       this.setData({ boards: boards, loading: false })
       wx.hideLoading()
     })

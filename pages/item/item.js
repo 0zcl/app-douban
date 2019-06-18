@@ -19,6 +19,7 @@ Page({
 
     app.douban.findOne(params.id)
       .then(d => {
+        console.log('d', params, d)
         this.setData({ title: d.title, movie: d })
         wx.setNavigationBarTitle({ title: d.title + ' « 电影 « 豆瓣' })
         wx.hideLoading()

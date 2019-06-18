@@ -24,6 +24,7 @@ Page({
 
     return app.douban.find(this.data.type, this.data.page++, this.data.size)
       .then(d => {
+        console.log('d', d)
         if (d.subjects.length) {
           this.setData({ subtitle: d.title, movies: this.data.movies.concat(d.subjects) })
         } else {
@@ -63,7 +64,7 @@ Page({
   onPullDownRefresh () {
     this.setData({ movies: [], page: 1, hasMore: true })
     this.loadMore()
-      .then(() => wx.stopPullDownRefresh())
+      .then(() => wx.stopPullDownRefresh())  //停止当前页面下拉刷新
   },
 
   onReachBottom () {
