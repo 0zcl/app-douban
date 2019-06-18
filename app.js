@@ -60,7 +60,7 @@ App({
         console.log(`currentCity : ${this.data.currentCity}`)
       })
       .catch(err => {
-        this.data.currentCity = '北京'
+        this.data.currentCity = '广州'
       })
   }
 })

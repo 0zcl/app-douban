@@ -21,7 +21,6 @@ Page({
     if (!this.data.hasMore) return
 
     this.setData({ subtitle: '加载中...', loading: true })
-
     return app.douban.find('search', this.data.page++, this.data.size, this.data.search)
       .then(d => {
         if (d.subjects.length) {
