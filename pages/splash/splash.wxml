@@ -1,5 +1,5 @@
 <view class="container">
-  <swiper class="splash" indicator-dots circular interval="2000" 
+  <swiper class="splash" indicator-dots circular autoplay interval="3000" 
     indicator-color="#a39f99" indicator-active-color="#f49641" duration="500">
     <swiper-item wx:for="{{ movies }}" wx:for-index="index" wx:key="id">
       <image src="{{ item.images.large }}" mode="aspectFill"/>

@@ -26,5 +26,5 @@
 .user-nickname {
   color: #aaa;
   font-size: 40rpx;
-  margin-bottom: 30rpx;
+  margin-bottom: 20rpx;
 }

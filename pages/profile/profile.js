@@ -7,11 +7,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title: 'About',
+    title: '关于我',
+    // 二维码
+    qrCode: 'https://images2018.cnblogs.com/blog/1038183/201807/1038183-20180705235216512-609812726.jpg',
     userInfo: {
       wechat: 'WEDN-NET',
-      nickName: 'https://github.com/zce/weapp-douban',
-      avatarUrl: 'https://img.zce.me/qrcode/wechat.jpg'
+      nickName: 'https://github.com/0zcl',
+      avatarUrl: 'https://images2018.cnblogs.com/blog/1038183/201807/1038183-20180705235216512-609812726.jpg'
     }
   },
 
